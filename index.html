@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Prathamesh, a front-end developer who builds fast, responsive websites using modern technologies like HTML, CSS, JavaScript, and React." />
+  <meta name="robots" content="index, follow" />
+  <title>Prathamesh | Front-End Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/assets/images/monogram-16px.png" type="image/png" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="/" class="logo">
+      <img src="/assets/images/logo.webp" alt="Prathamesh Logo" width="120" height="33">
+    </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Hi, I’m <span class="highlight">Prathamesh</span></h1>
+        <p>A <span class="front-end">front-end developer</span> who turns creative designs into beautiful, high-performing websites.</p>
+        <a href="#projects" class="btn-primary">See My Work</a>
+      </div>
+      <div class="hero-image">
+        <video
+          width="600"
+          height="600"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          fetchpriority="high"
+          poster="assets/images/wwo2.webp"
+        >
+          <source src="assets/images/wwwo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+      </video>
+
+            </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p class="margin">
+          I'm based in Pune, India. I have a strong background in tech. I've worked for companies worldwide in a range of technical and non-technical capacities for over 15 years.
+        </p>
+        <p>
+          I use HTML/CSS/JS as well as modern frameworks like React to build performant, beautiful, and clean UIs.
+        </p>
+      </div>
+      <div class="about-gif">
+        <img src="assets/images/web-developer.gif" alt="Web developer at work illustration" loading="lazy" width="316" height="238" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container services-inner">
+      <h2>What I Do</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Responsive Websites</h3>
+          <img class="service-gif" src="assets/images/mobile.gif" alt="Mobile responsive design" loading="lazy" width="120" height="120">
+          <p>Mobile-friendly by default.</p>
+        </div>
+        <div class="service-card">
+          <h3>Beautiful Design</h3>
+          <img class="service-gif" src="assets/images/beauty.gif" alt="Beautiful web design illustration" loading="lazy" width="120" height="120">
+          <p>Attractive, clean, and tasteful webpages.</p>
+        </div>
+        <div class="service-card">
+          <h3>Performance Focus</h3>
+          <img class="service-gif" src="assets/images/speed.gif" alt="Speed and performance icon" loading="lazy" width="120" height="120">
+          <p>I aim for a 90-plus PageSpeed Insights performance score.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container projects-inner">
+      <h2>Front-end Designs</h2>
+
+      <div class="project-card">
+        <a class="popup-link" href="assets/images/staynidofs.webp" target="_blank">
+          <img class="project-img" src="assets/images/staynido.webp" alt="Staynido Project Screenshot" loading="lazy">
+        </a>
+        <div>
+          <a class="external-link" href="https://staynido.com" target="_blank" rel="noopener noreferrer">Staynido Worldwide &nbsp;&#8599;</a>
+        </div>
+        <p>Guesty Advanced Engine (React).</p>
+        <p>Designed in collaboration with Staynido's Creative Lead.</p>
+      </div>
+
+      <div class="project-card">
+        <a class="popup-link" href="assets/images/littlebigdeedsfs.webp" target="_blank">
+          <img class="project-img" src="assets/images/child.webp" alt="Little Big Deeds Project Screenshot" loading="lazy">
+        </a>
+        <div>
+          <a class="external-link" href="https://littlebigdeeds.com" target="_blank" rel="noopener noreferrer">Little Big Deeds&nbsp;&#8599;</a>
+        </div>
+        <p>Cloudflare-powered, vanilla HTML/CSS/JS.</p>
+        <p>Self-designed.</p>
+      </div>
+
+      <div class="project-card">
+        <a class="popup-link" href="assets/images/forever-studios-fs.webp" target="_blank">
+          <img class="project-img" src="assets/images/forever-studios.webp" alt="Forever Studios Project Screenshot" loading="lazy">
+        </a>
+        <div>
+          <a class="external-link" href="https://everonward15.github.io/forever-studios/" target="_blank" rel="noopener noreferrer">Forever Studios&nbsp;&#8599;</a>
+        </div>
+        <p>Vanilla HTML/CSS/JS, Lightbox gallery.</p>
+        <p>Self-designed.</p>
+      </div>
+
+      <a href="#" id="open-modal-btn" class="btn-primary">Even More Projects</a>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="projects-modal" class="modal">
+    <div class="modal-content">
+      <button id="close-modal-btn" class="close-btn" aria-label="Close Modal">&times;</button>
+      <h2>More Projects <br> (Professional & Personal)</h2>
+      <ul class="project-list">
+        <li><a href="https://everonward15.github.io/tarot/" target="_blank" rel="noopener noreferrer">Tarot Card App</a></li>
+        <li><a href="https://lotus-crypto.vn/" target="_blank" rel="noopener noreferrer">Lotus Crypto Vietnam</a></li>
+        <li><a href="https://lotus-crypto.com/" target="_blank" rel="noopener noreferrer">Lotus Crypto Global</a></li>
+        <li><a href="https://furrypets.great-site.net/?i=1" target="_blank" rel="noopener noreferrer">Furry Pets</a></li>
+        <li><a href="https://happy-inr.in/" target="_blank" rel="noopener noreferrer">Happy INR</a></li>
+        <li><a href="https://1tamilmv.fan/" target="_blank" rel="noopener noreferrer">1TamilMV</a></li>
+        <li><a href="https://smartmoneydumbmoney.com/" target="_blank" rel="noopener noreferrer">Smart Money, Dumb Money</a></li>
+        <li><a href="https://buddharetreat.life/" target="_blank" rel="noopener noreferrer">Buddha Retreat</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <h2>Let's Work Together</h2>
+      <p>If you like what you see and have a project in mind, let's talk!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social-icons">
+        <a href="https://www.upwork.com/freelancers/~01f399fca4989084d0" target="_blank" rel="noopener noreferrer" aria-label="Upwork">
+          <img src="assets/images/icons8-upwork.svg" alt="Upwork Icon" loading="lazy" width="32" height="32" />
+        </a>
+      </div>
+      <p>&copy; 2025 Prathamesh Satish Bhoite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
